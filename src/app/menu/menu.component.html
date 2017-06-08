@@ -1,0 +1,25 @@
+<nav (click)="toggleMenu()" [ngClass]="{'navbar navbar-fixed-left navbar-minimal animate': true, 'open': isMenuOpen}" role="navigation">
+  <div class="navbar-toggler animate">
+    <span class="menu-icon"></span>
+  </div>
+  <ul class="navbar-menu animate">
+    <li (click)="goToCr()">
+      <a class="animate">
+					<span class="desc animate"> CREATE CR </span>
+					<span class="glyphicon glyphicon-user"></span>
+				</a>
+    </li>
+    <li>
+      <a href="#blog" class="animate">
+					<span class="desc animate"> FIND CR </span>
+					<span class="glyphicon glyphicon-info-sign"></span>
+				</a>
+    </li>
+    <li>
+      <a href="#contact-us" class="animate">
+					<span class="desc animate"> OTHER </span>
+					<span class="glyphicon glyphicon-comment"></span>
+				</a>
+    </li>
+  </ul>
+</nav>
